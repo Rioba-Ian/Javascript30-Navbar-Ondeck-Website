@@ -1,0 +1,31 @@
+@use 'sass:math';
+
+// throw an error if we get a pixel unit.
+
+@function rem($pixel) {
+
+    // return pixel divided by 16 
+    // result into rem
+    @if math.is-unitless($pixel) {
+        @return math.div($pixel, 16)+rem;
+    }
+
+    // else throw an exception error
+    @else {
+        @error 'Don\'t use pixel units, instead use rem() function; f.rem(16) for 16px and 1rem';
+    }
+}
+
+@function em($pixel) {
+
+    // return pixel divided by 16 
+    // result into em
+    @if math.is-unitless($pixel) {
+        @return math.div($pixel, 16)+em;
+    }
+
+    // else throw an exception error
+    @else {
+        @error 'Don\'t use pixel units, instead use rem() function; f.em(16) for 16px and 1em'
+    }
+}

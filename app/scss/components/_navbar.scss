@@ -1,0 +1,65 @@
+@use '../globals/' as glob;
+@use '../util/' as util;
+
+.navbar {
+    // padding: 2rem 0 0.5rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+    @include util.breakpoint-down(small) {
+        justify-content: space-between;
+        margin: 0 1rem;
+    }
+
+    @include util.breakpoint(medium) {
+        padding-inline: 5rem;
+    }
+
+    @include util.breakpoint(large) {
+        justify-content: space-between;
+        padding: 2rem 9rem;
+    }
+
+
+
+    &__menu {
+        display: none;
+
+        @include util.breakpoint-down(medium) {
+            display: flex;
+        }
+    }
+
+    // middle
+    &__middle {
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 10rem;
+            box-shadow: 0 0.5rem 1rem 0 hsl(0, 0, 20%);
+            z-index: 1;
+        }
+
+        .products a:hover {
+            .dropdown-content {
+                visibility: visible;
+            }
+        }
+
+
+    }
+
+    &__middle,
+    &__right {
+        @include util.breakpoint-down(medium) {
+            display: none;
+        }
+    }
+
+}

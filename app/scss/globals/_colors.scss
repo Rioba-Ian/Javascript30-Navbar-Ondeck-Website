@@ -1,0 +1,24 @@
+:root {
+    --cream: hsl(34, 37%, 93%);
+    --jungle-green: hsl(125, 46%, 14%);
+    --black: #000000;
+    --yellow: #f7b300;
+    --grey: hsl(0, 0%, 48%);
+}
+
+a {
+    color: var(--grey);
+}
+
+button {
+    background-color: var(--jungle-green);
+    color: #fff;
+}
+
+span {
+    color: var(--yellow);
+}
+
+h1 {
+    color: #000000;
+}
