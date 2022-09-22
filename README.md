@@ -5,29 +5,60 @@ Codewell's aim is to provide you with real-world design templates that you can u
 
 Free or paid, all templates are high quality and will make great portfolio pieces.
 
-### I've completed the challenge, now what?
+This is my solution to the codewell Javascript30 challenge.
 
-We recommend using one of these two websites to deploy your projects
+## Table of contents
 
-- [GitHub Pages](https://pages.github.com/)
-- [Netlify](https://www.netlify.com/)
+- [Welcome to Codewell! 👋](#welcome-to-codewell-)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Links](#links)
+    - [Built with](#built-with)
+    - [My approach](#my-approach)
+      - [Future development](#future-development)
+    - [Wes Bos's Javascript30](#wes-boss-javascript30)
 
-They're super easy to setup and you should have your website up and running in no time, just follow their instructions.
+
+## Overview
+
+### The challenge
+
+The challenge is make a responsive navbar similar to this: 
+
+![](./Design/Landing%20Page%20—%20Mobile.png)
+
+![](./Design/Screen%20Shot%202022-09-15%20at%2013.36.53.png)
 
 
-### Submit your solution to Codewell
+My solution to the challenge in mobile, tablet and desktop (1440px)
 
-Visit the relevant challenge on [Codewell](https://codewell.cc) and click on 'Submit Solution' right under the challenge.
-Enter all the title, Github repo URL, Live URL (Netlify or GH Pages), and tell the community what challenges you've faced.
+![](./imgs/Screen%20Shot%202022-09-22%20at%2021.08.16.png)
 
-### Join our community on Slack
+![](./imgs/Screen%20Shot%202022-09-22%20at%2021.09.52.png)
 
-If you want more real-time communication, you can visit our community on [Slack](https://join.slack.com/t/codewell-hq/shared_invite/zt-ni8c9g8h-gNYWrmqQ3Uh37dcLg9~LMQ). 
+![](./imgs/Screen%20Shot%202022-09-22%20at%2021.08.47.png)
+
+### Links
+
+- Solution URL: [here](https://rioba-ian.github.io/Javascript30-Navbar-Ondeck-Website/)
+
+### Built with
+
+- Semantic HTML5 markup
+- SASS for CSS
+- Flexbox
+- CSS Grid
+
+### My approach
+
+The first thing was to design my sass reusable components and a sass file structure.
+After that I would nest styles inside each other. I did the body and then the navbar then finished with the main section. The main and navbar are their own sass css components. 
+
+#### Future development 
+I would like to do more of sass and use more functionilities including mixins, functions and some other crazy stuff. Being the first time using sass, it was quite an uphill to learn how to leverage the power of sass. 
 
 ### Wes Bos's Javascript30
 
 This challenge is best coupled with Day 22 of Wes Bos's [Javascript30](https://javascript30.com) course. 
 
-### Fonts Used
-
-https://fonts.google.com/specimen/Inter
