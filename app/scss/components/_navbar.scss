@@ -29,9 +29,20 @@
 
     &__menu {
         display: none;
+        cursor: pointer;
 
         @include util.breakpoint-down(medium) {
             display: flex;
+
+            // .dropdown-content,
+            // &__products {
+            //     display: none;
+            //     flex-direction: column;
+
+            // }
+
+
+
         }
     }
 
